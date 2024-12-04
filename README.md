@@ -1,6 +1,6 @@
 # Renovation.Reviews
 
-![Renovation.Reviews Logo](https://renovation.reviews/logo.png)
+![Renovation.Reviews Logo](https://renovation.reviews/uploads/default/original/1X/60656701d478b75210a714a8030c4b51b5425849.png)
 
 Come and join us: **Renovation.Reviews**, our latest community-driven project powered by [Discourse](https://www.discourse.org/). We're revolutionizing the way home renovation reviews are shared and trusted across the web.
 
