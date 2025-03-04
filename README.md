@@ -30,6 +30,7 @@ Ready to Join the Movement? Don’t miss out on this opportunity to make a real 
 - **Community-Driven Reviews**: Honest and transparent reviews from real homeowners and renovation professionals.
 - **Exclusive Networks**: Access to industry networks and resources.
 - **Trusted Platform**: Commitment to authenticity and reliability in every review.
+- **Reward System**: Built in crypto reward system that offers $RENO coin as an incentive.
 
 ## 🔗 Useful Links
 
