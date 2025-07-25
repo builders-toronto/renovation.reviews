@@ -1,39 +1,54 @@
-# Renovation ($RENO) Token Information
+# Renovation ($RENO) Token Information  
+*Last updated 25 Jul 2025 – on‑chain data at current Solana block height*
 
-## 1. Coin Holders & Distribution Schedule
+## 0. What is $RENO?  
+Renovation ($RENO) is a **Solana SPL meme‑utility token** powering the Renovation.Reviews ecosystem—now a multi‑channel content flywheel that touches every major SEO and social surface (Google, YouTube, Pinterest, TikTok, X, Telegram, and more).
 
-- **Top Holder List URL:** [Top 100 Holders on Solscan](https://solscan.io/token/BrEiwuaLCuG7nG9bMuDg9ihp6sisvD6DCqNjrudHxmzg#holders)
-- **Detailed Distribution Schedule:** [Renovation Whitepaper](https://renovation.reviews/whitepaper.pdf)
+- **Earn:** Contributors receive $RENO when their renovation tutorials, reviews, or memes rank.  
+- **Yield:** Stakers share in ad, affiliate, and marketplace revenue generated across the network.  
+- **Deflation:** Premium tools, post boosts, and DAO votes trigger permanent burns, shrinking supply as traffic scales.  
 
-## 2. Coin/Token Supply Information
+The contract is immutable, supply is capped, and growth in traffic feeds directly into token demand and staking yield.
 
-- **Token Generation Event (TGE) Date:** 27/01/2025
-- **Max Supply Amount:** 5,899,697,555.963080343 RENO
-- **Infinite Supply:** No (Fixed Supply)
+---
 
-## 3. Total Supply Information
+## 1. Holders & Distribution Links
+- **Top‑100 holders:** <https://solscan.io/token/BrEiwuaLCuG7nG9bMuDg9ihp6sisvD6DCqNjrudHxmzg#holders>  
+- **Whitepaper & full distribution schedule:** <https://renovation.reviews/whitepaper.pdf>
 
-- **Total Supply:** 5,899,697,555.963080343 RENO
-- **Burned Tokens:** Yes
-- **Burned Wallet:** None for MEME
+---
 
-## 4. Circulating Supply Information
+## 2. Token Supply Dashboard
 
-- **Circulating Supply:** 2,141,187,381.6667233 RENO
-- **Circulating Supply API:** [Solscan API](https://public-api.solscan.io/token/meta?tokenAddress=BrEiwuaLCuG7nG9bMuDg9ihp6sisvD6DCqNjrudHxmzg)
-- **Vested/Locked Wallets:** None for MEME
+| Metric | Amount | Notes |
+|--------|---------------------------|------------------------------------------------|
+| **Max Supply (minted at TGE – 27 Jan 2025)** | **5 899 697 555.963 $RENO** | Fixed; no further minting possible |
+| **Current / Effective Supply** | **4 364 178 184.439 $RENO** | After July 2025 LP‑burn |
+| **Tokens Burned to‑date** | **1 535 519 371.524 $RENO** (≈ 26.0 % of max) | LP tokens + initial 1.3 % meme burn |
+| **Circulating Supply** | **2 141 187 381.667 $RENO** | [`Solscan` meta endpoint](https://public-api.solscan.io/token/meta?tokenAddress=BrEiwuaLCuG7nG9bMuDg9ihp6sisvD6DCqNjrudHxmzg) |
+| **Burn address / TxIDs** | _Add hashes here for auditability if desired_ |
 
-## 5. Initial Token Allocation
+---
 
-| Allocation Name           | Percentage (%) | TGE (%) | Cliff | Vesting | Release Schedule                                               |
-|---------------------------|----------------|---------|-------|---------|----------------------------------------------------------------|
-| Community Rewards         | 40%            | 10%     | 0     | 24      | 10% at TGE, followed by linear monthly vesting over 24 months  |
-| Liquidity & Exchanges     | 20%            | 50%     | 0     | 12      | 50% at TGE, linear monthly vesting over 12 months              |
-| Development & Operations  | 15%            | 10%     | 6     | 18      | 10% at TGE, 6-month cliff, linear monthly vesting thereafter   |
-| Founders & Team           | 10%            | 0%      | 12    | 24      | 12-month cliff, linear monthly vesting over 24 months          |
-| Strategic Partnerships    | 13.7%          | 0%      | 6     | 18      | 6-month cliff, linear monthly vesting over 18 months           |
-| Burned Tokens             | 1.3%           | 0%      | 0     | N/A     | Permanently removed from circulation (burned)                  |
+## 3. Current Allocation of the Live Supply
 
-## 6. Additional Supply Information
+| Allocation | % of **Max Supply** | Tokens (at Max) | Unlock & Vesting |
+|------------|--------------------|-----------------|------------------|
+| **Community Rewards** | **40 %** | 2 359 879 022 $RENO | 10 % at TGE, then linear monthly over 24 mo |
+| Liquidity & Exchanges | 6.81 % | 401 769 404 $RENO | 50 % at TGE, then linear monthly over 12 mo |
+| Development & Operations | 5.11 % | 301 474 545 $RENO | 10 % at TGE, 6‑mo cliff, then linear over 18 mo |
+| Founders & Team | 3.41 % | 201 179 687 $RENO | 12‑mo cliff, then linear over 24 mo |
+| Strategic Partnerships | 4.67 % | 275 515 876 $RENO | 6‑mo cliff, then linear over 18 mo |
+| **Subtotal (active allocations)** | **60 %** | 3 539 818 534 $RENO |  |
+| **Burned / permanently removed** | 26.03 % | 1 535 519 372 $RENO | LP burn + initial meme burn |
+| **Treasury reserve / future DAO directives** | 13.97 % | 824 359 651 $RENO | Held by DAO; subject to future votes |
 
-The Renovation ($RENO) token is primarily used as a reward and incentive within the Renovation.Reviews community platform. Tokens are specifically allocated to encourage high-quality content contributions, professional reviews, and active user participation. This incentive structure ensures ongoing community engagement, sustainable content quality, and platform growth, representing the core utility and purpose of the $RENO token.
+*(If the Treasury is later fully burned, shift that 13.97 % into the Burn row.)*
+
+---
+
+## 4. Utility & Incentive Recap
+1. **Create‑to‑Earn:** High‑quality renovation content that surfaces in search or social earns $RENO.  
+2. **Staking Yield:** Ad + affiliate + marketplace revenue flows to staking pools.  
+3. **Deflationary Fees:** Premium dashboards, post boosts, and featured slots require $RENO fees that are auto‑burned.  
+4. **Governance:** Major roadmap changes and fee tweaks require DAO votes by token holders.
