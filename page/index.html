@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>$RENO | Meme Coin for Real Builders</title>
+    <meta name="description"
+        content="$RENO is the builder-first meme coin that rewards renovation content, tutorials, and memes. Built on Solana with 0% tax, locked liquidity, and viral energy." />
+    <meta name="keywords"
+        content="RENO, $RENO, renovation crypto, meme coin, Solana, Raydium, home improvement, token, builder coin, renovation reviews, degen builder, crypto rewards, tokenomics" />
+    <meta name="author" content="Renovation.Reviews" />
+    <link rel="canonical" href="https://crypto.renovation.reviews/" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="$RENO | Build • Meme • Earn" />
+    <meta property="og:description"
+        content="$RENO turns renovation content into crypto rewards. 2,300+ builders onboarded. 0% buy tax. Live on Solana." />
+    <meta property="og:image" content="https://crypto.renovation.reviews/images/Gsn9N53XoAAFi15.jpeg" />
+    <meta property="og:image:alt" content="The $RENO Meme Coin — Built for Real Builders" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:url" content="https://crypto.renovation.reviews" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Renovation Reviews" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="$RENO | Build • Meme • Earn" />
+    <meta name="twitter:description"
+        content="Earn real crypto from tutorials, memes, and reno reviews. Powered by Solana. Buy $RENO on Raydium." />
+    <meta name="twitter:image" content="https://crypto.renovation.reviews/images/Gsn9N53XoAAFi15.jpeg" />
+    <meta name="twitter:site" content="@lfbuilders" />
+    <meta name="twitter:creator" content="@lfbuilders" />
+
+    <!-- Other -->
+    <link rel="icon" type="image/png"
+        href="https://renovation.reviews/uploads/default/optimized/2X/3/326707811bc8d8269b2deba76929aa10d3db06d6_2_32x32.png" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Cookie&family=JetBrains+Mono:wght@500&display=swap"
+        rel="stylesheet" />
+
+    <script src="https://cdn.tailwindcss.com?plugins=typography,aspect-ratio"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            light: '#9ef8c4',
+                            DEFAULT: '#10b981',
+                            dark: '#000',
+                            button: '#059669',
+                        },
+                        charcoal: '#0d0d0d',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                        cursive: ['Cookie', 'cursive'],
+                        mono: ['"JetBrains Mono"', 'monospace'],
+                    },
+                },
+            },
+        };
+    </script>
+    <style>
+        @keyframes marquee {
+            0% {
+                transform: translateX(0);
+            }
+
+            100% {
+                transform: translateX(-50%);
+            }
+        }
+
+        .marquee-track {
+            display: inline-flex;
+            animation: marquee 55s linear infinite;
+            will-change: transform;
+        }
+
+        .marquee-track>span {
+            white-space: nowrap;
+            padding: 0 1rem;
+        }
+
+        .frost {
+            backdrop-filter: blur(8px);
+            background: rgb(17 24 39 / var(--tw-bg-opacity, 1));
+        }
+
+        .hero-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.25rem;
+            padding: 1rem 2.5rem;
+            font-size: 1rem;
+            font-weight: 700;
+            letter-spacing: 0.02em;
+            border-radius: 9999px;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            box-shadow: 0 4px 12px -3px rgba(0, 0, 0, 0.4);
+        }
+
+        .hero-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 18px -4px rgba(0, 0, 0, 0.45);
+        }
+
+        .hero-btn:focus-visible {
+            outline: 2px solid currentColor;
+            outline-offset: 2px;
+        }
+
+        .buy-btn {
+            background: #0b8d62;
+            color: #fff;
+        }
+
+        .buy-btn:hover {
+            background: #059669;
+        }
+
+        .paper-btn {
+            background: rgba(60, 128, 184, 0.5);
+            color: #fff;
+        }
+
+        .paper-btn:hover {
+            background: rgba(71, 145, 206, 0.5);
+        }
+
+        @media (min-width: 640px) {
+            .hero-btn {
+                font-size: 1.125rem;
+            }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            .hero-btn {
+                transition: none;
+            }
+        }
+
+        .sol-btn {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.25rem;
+            width: 100%;
+            padding: 1.25rem 1.5rem;
+            border-radius: 9999px;
+            font-weight: 600;
+            color: #fff;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+                0 4px 6px -4px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-out,
+                box-shadow 0.3s ease-out,
+                background-color 0.3s ease-out;
+        }
+
+        @media (min-width: 640px) {
+            .sol-btn {
+                width: auto;
+            }
+        }
+
+        .sol-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+                0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+
+        .sol-btn:focus-visible {
+            outline: 2px solid currentColor;
+            outline-offset: 2px;
+        }
+
+        .sol-btn[data-color="emerald"] {
+            background: #059669;
+        }
+
+        .sol-btn[data-color="emerald"]:hover {
+            background: #10b981;
+        }
+
+        .sol-btn[data-color="blue"] {
+            background: #2563eb;
+        }
+
+        .sol-btn[data-color="blue"]:hover {
+            background: #3b82f6;
+        }
+
+        .sol-btn[data-color="slate"] {
+            background: #1e293b;
+        }
+
+        .sol-btn[data-color="slate"]:hover {
+            background: #334155;
+        }
+
+        .sol-btn[data-color="orange"] {
+            background: #ea580c;
+        }
+
+        .sol-btn[data-color="orange"]:hover {
+            background: #f97316;
+        }
+
+        .reno-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.25rem;
+            width: 100%;
+            max-width: max-content;
+            padding: 0.875rem 2.5rem;
+            font-size: 1rem;
+            font-weight: 600;
+            letter-spacing: 0.02em;
+            color: #fff;
+            background: #10b981;
+            border-radius: 9999px;
+            box-shadow: 0 4px 12px -3px rgba(16, 185, 129, 0.4);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .reno-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 18px -4px rgba(16, 185, 129, 0.45);
+        }
+
+        .reno-btn:focus-visible {
+            outline: 2px solid currentColor;
+            outline-offset: 2px;
+        }
+
+        @media (min-width: 640px) {
+            .reno-btn {
+                width: auto;
+            }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            .reno-btn {
+                transition: none;
+            }
+        }
+    </style>
+</head>
+
+<body class="bg-gray-900 text-white font-sans leading-relaxed selection:bg-brand/80 selection:text-white">
+    <div class="bg-gray-900 text-center py-1 text-sm sm:text-base">
+        <a href="https://x.com/lfbuilders" target="_blank" class="font-semibold hover:text-brand transition">🔗 Follow
+            Renovation.Reviews on X</a>
+    </div>
+    <div class="relative overflow-hidden whitespace-nowrap bg-gray-900 py-1 text-sm">
+        <div id="marquee" class="marquee-track inline-flex items-center"></div>
+    </div>
+    <nav id="nav" class="frost border-b border-brand/40 sticky top-0 z-40 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-6 py-3 flex items-center justify-between">
+            <a href="#top" class="text-2xl font-extrabold tracking-tight hover:text-brand">$RENO</a>
+            <button id="nav-toggle" class="md:hidden p-2" aria-label="Toggle menu">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+            <ul id="nav-menu" class="hidden md:flex space-x-8 text-base">
+                <li><a href="#why" class="hover:text-brand">Why</a></li>
+                <li><a href="#solscan" class="hover:text-brand">Stats</a></li>
+                <li><a href="#roadmap" class="hover:text-brand">Roadmap</a></li>
+                <li><a href="https://t.me/+SEBp3Pmgpz8zN2Nk" class="hover:text-brand">Telegram</a></li>
+                <li><a href="https://jup.ag/tokens/BrEiwuaLCuG7nG9bMuDg9ihp6sisvD6DCqNjrudHxmzg"
+                        class="hover:text-brand font-semibold">Buy $RENO</a></li>
+            </ul>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-gray-900 border-t border-brand/40">
+            <ul class="flex flex-col w-full px-6 py-6
+space-y-3 xs:space-y-4 sm:space-y-5
+text-center text-base xs:text-lg">
+
+                <li>
+                    <a href="#why" class="block w-full py-3 rounded-md
+hover:bg-brand/10 hover:text-brand
+focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand/70
+transition">
+                        Why
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#solscan" class="block w-full py-3 rounded-md
+hover:bg-brand/10 hover:text-brand
+focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand/70
+transition">
+                        Stats
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#roadmap" class="block w-full py-3 rounded-md
+hover:bg-brand/10 hover:text-brand
+focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand/70
+transition">
+                        Roadmap
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://t.me/+SEBp3Pmgpz8zN2Nk" class="block w-full py-3 rounded-md
+hover:bg-brand/10 hover:text-brand
+focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand/70
+transition">
+                        Telegram
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://jup.ag/tokens/BrEiwuaLCuG7nG9bMuDg9ihp6sisvD6DCqNjrudHxmzg" class="block w-full py-3 rounded-md font-semibold
+hover:bg-brand/20 hover:text-brand
+focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand/70
+transition">
+                        Buy $RENO
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <header id="top" class="relative overflow-hidden bg-gray-900">
+        <div
+            class="relative border-brand border-b max-w-4xl mx-auto text-center py-24 px-6 animate__animated animate__fadeIn">
+            <h1 class="text-2xl md:text-7xl font-extrabold leading-tight drop-shadow-lg">
+                Build.&nbsp;Meme.&nbsp;<span class="text-brand">Earn.</span>
+            </h1>
+
+            <p class="mt-6 text-xl md:text-2xl max-w-3xl mx-auto">
+                Earn real crypto for engaging with the <b>$RENOVATION</b> community.
+            </p>
+
+            <div class="mt-10 flex flex-wrap justify-center gap-6">
+                <a href="https://jup.ag/tokens/BrEiwuaLCuG7nG9bMuDg9ihp6sisvD6DCqNjrudHxmzg" class="hero-btn buy-btn">
+                    💰 Buy $RENO
+                </a>
+
+                <a href="https://renovation.reviews/whitepaper.pdf" target="_blank" class="hero-btn paper-btn">
+                    📄 Whitepaper
+                </a>
+            </div>
+        </div>
+    </header>
+    <section class="bg-gray-900 py-6">
+        <div class="max-w-6xl mx-auto flex flex-wrap items-center justify-center gap-8 text-center text-lg">
+            <div class="flex items-center gap-2"><span class="text-3xl">🏗</span><span><strong
+                        class="text-brand-light">2,300+</strong> builders joined</span></div>
+            <div class="flex items-center gap-2"><span class="text-3xl">💰</span><span id="dynamic-tvl"><strong
+                        class="text-brand-light">$1.4M</strong> TVL secured</span></div>
+            <div class="flex items-center gap-2"><span class="text-3xl">⚡</span><span><strong
+                        class="text-brand-light">0%</strong> buy tax</span></div>
+        </div>
+    </section>
+    <section id="why" class="max-w-7xl mx-auto px-6 py-20">
+        <h2 class="text-4xl font-bold text-center mb-14">Why Builders Choose $RENO</h2>
+        <div class="grid gap-10 md:grid-cols-3 text-center">
+            <div class="p-10 bg-gray-800/70 rounded-2xl shadow-xl hover:scale-[1.04] transition-transform">
+                <div class="text-5xl mb-6">💸</div>
+                <h3 class="text-2xl font-semibold mb-3">Instant Profits</h3>
+                <p>Earn the moment you engage with the community!</p>
+            </div>
+            <div class="p-10 bg-gray-800/70 rounded-2xl shadow-xl hover:scale-[1.04] transition-transform">
+                <div class="text-5xl mb-6">🎯</div>
+                <h3 class="text-2xl font-semibold mb-3">Massive Audience</h3>
+                <p>1M+ monthly views from homeowners & reno enthusiasts.</p>
+            </div>
+            <div class="p-10 bg-gray-800/70 rounded-2xl shadow-xl hover:scale-[1.04] transition-transform">
+                <div class="text-5xl mb-6">🔒</div>
+                <h3 class="text-2xl font-semibold mb-3">Locked Free Advertising</h3>
+                <p>Get your business infront of the RIGHT people for FREE.</p>
+            </div>
+        </div>
+    </section>
+    <section id="solscan" class="relative isolate overflow-hidden py-16 px-4 sm:px-6 lg:px-8
+bg-gray-900
+text-white">
+        <div class="max-w-6xl mx-auto text-center space-y-10">
+            <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-wide">
+                See&nbsp;<span class="text-emerald-400">$RENO</span>&nbsp;on&nbsp;Solscan
+            </h2>
+            <div class="grid gap-4
+grid-cols-1
+sm:grid-cols-2
+lg:grid-cols-4
+justify-items-center">
+
+                <a data-color="emerald" href="https://solscan.io/token/BrEiwuaLCuG7nG9bMuDg9ihp6sisvD6DCqNjrudHxmzg"
+                    target="_blank" rel="noopener noreferrer" class="sol-btn">
+                    🔍 View Token Details
+                </a>
+
+                <a data-color="blue" href="https://solscan.io/account/B9t2LzJMn1D6mqbZJyBZcqzrRkwffQdPxKgxjqRQXGqo"
+                    target="_blank" rel="noopener noreferrer" class="sol-btn">
+                    💧 Liquidity Pool
+                </a>
+
+                <a data-color="slate"
+                    href="https://solscan.io/token/BrEiwuaLCuG7nG9bMuDg9ihp6sisvD6DCqNjrudHxmzg#holders" target="_blank"
+                    rel="noopener noreferrer" class="sol-btn">
+                    🏦 Holder&nbsp;Leaderboard
+                </a>
+
+                <a data-color="orange" href="https://jup.ag/tokens/BrEiwuaLCuG7nG9bMuDg9ihp6sisvD6DCqNjrudHxmzg"
+                    target="_blank" rel="noopener noreferrer" class="sol-btn">
+                    🛒 Buy&nbsp;$RENO&nbsp;on&nbsp;Raydium
+                </a>
+            </div>
+        </div>
+    </section>
+    <section id="faqs" class="max-w-5xl mx-auto px-6 py-14">
+        <h2 class="text-4xl font-bold text-center mb-10">Frequently Asked Questions</h2>
+        <div class="space-y-6">
+            <details class="p-4 bg-gray-800/60 rounded-lg">
+                <summary class="cursor-pointer text-xl font-semibold">What is $RENO?</summary>
+                <p class="mt-2">A Solana SPL token blending meme energy with practical utility — rewarding renovation
+                    content creators.</p>
+            </details>
+            <details class="p-4 bg-gray-800/60 rounded-lg">
+                <summary class="cursor-pointer text-xl font-semibold">How do I earn rewards?</summary>
+                <p class="mt-2">Publish tutorials, answer questions, review products, be a good team player — the
+                    community tips you in $RENO.</p>
+            </details>
+            <details class="p-4 bg-gray-800/60 rounded-lg">
+                <summary class="cursor-pointer text-xl font-semibold">Is there a whitepaper?</summary>
+                <p class="mt-2">Yes! <a class="text-green-400 underline"
+                        href="https://renovation.reviews/whitepaper.pdf" target="_blank">Read the full whitepaper
+                        (PDF)</a> to dive into our tokenomics, roadmap and governance model.</p>
+            </details>
+            <details class="p-4 bg-gray-800/60 rounded-lg">
+                <summary class="cursor-pointer text-xl font-semibold">Is $RENO audited?</summary>
+                <p class="mt-2">Liquidity will be burnt, team contracts will be allocated appropriately.</p>
+            </details>
+        </div>
+    </section>
+    <section id="roadmap" class="max-w-7xl mx-auto px-6 py-20">
+        <h2 class="text-4xl font-bold text-center mb-16">Roadmap</h2>
+        <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-4 text-center">
+            <div
+                class="bg-gray-800/60 border-l-4 border-blue-400 rounded-lg p-8 shadow-lg hover:-translate-y-1 transition-transform">
+                <h3 class="text-xl font-bold mb-4">Phase 1</h3>
+                <ul class="space-y-1 text-left mx-auto w-max">
+                    <li>✅ Token launch</li>
+                    <li>✅ 2k builders onboarded</li>
+                </ul>
+            </div>
+            <div
+                class="bg-gray-800/60 border-l-4 border-brand rounded-lg p-8 shadow-lg hover:-translate-y-1 transition-transform">
+                <h3 class="text-xl font-bold mb-4">Phase 2</h3>
+                <ul class="space-y-1 text-left mx-auto w-max">
+                    <li>🛠 Content monetization</li>
+                    <li>🛠 Staking & LP rewards</li>
+                </ul>
+            </div>
+            <div
+                class="bg-gray-800/60 border-l-4 border-yellow-400 rounded-lg p-8 shadow-lg hover:-translate-y-1 transition-transform">
+                <h3 class="text-xl font-bold mb-4">Phase 3</h3>
+                <ul class="space-y-1 text-left mx-auto w-max">
+                    <li>🚧 Mobile/Web App</li>
+                    <li>🚧 Partnerships</li>
+                </ul>
+            </div>
+            <div
+                class="bg-gray-800/60 border-l-4 border-purple-400 rounded-lg p-8 shadow-lg hover:-translate-y-1 transition-transform">
+                <h3 class="text-xl font-bold mb-4">Phase 4</h3>
+                <ul class="space-y-1 text-left mx-auto w-max">
+                    <li>🚧 AR tools</li>
+                    <li>🚧 Charity projects</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section id="solscan" class="relative isolate overflow-hidden py-16 px-4 sm:px-6 lg:px-8
+bg-gray-900
+text-white">
+
+        <div class="max-w-6xl mx-auto flex flex-col items-center gap-10">
+
+            <h2 class="text-center text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-wide">
+                Ready&nbsp;To&nbsp;Grab&nbsp;<span class="text-emerald-400">$RENO</span>?
+            </h2>
+            <a href="https://jup.ag/tokens/BrEiwuaLCuG7nG9bMuDg9ihp6sisvD6DCqNjrudHxmzg" target="_blank"
+                rel="noopener noreferrer" class="reno-btn">
+                Buy&nbsp;$RENO&nbsp;Now
+            </a>
+
+            <p class="text-center text-sm text-white/80">
+                Liquidity&nbsp;locked&nbsp;•&nbsp;0%&nbsp;tax&nbsp;•&nbsp;Next&nbsp;price&nbsp;jump:&nbsp;
+                <span id="jump-timer" class="font-semibold">soon</span>
+            </p>
+        </div>
+    </section>
+    <footer class="border-t border-green-600/40 py-8 text-center text-sm bg-gray-900">
+        <ul class="flex justify-center space-x-4 mb-4">
+            <li><a href="https://twitter.com/lfbuilders" class="hover:text-green-400">Twitter</a></li>
+            <li><a href="https://renovation.reviews" class="hover:text-green-400">Discourse</a></li>
+            <li><a href="https://t.me/+SEBp3Pmgpz8zN2Nk" class="hover:text-green-400">Telegram</a></li>
+        </ul>
+        <p class="text-gray-400/80 max-w-lg mx-auto">Cryptocurrency involves risk. Always do your own research and
+            consult local regulations. Only invest what you can afford to lose.</p>
+        <p class="mt-2 text-gray-500">©2025 Renovation.Reviews – Crafted with 💚🐸 by the DIY community</p>
+    </footer>
+    <script type="module">
+        const MINT = 'BrEiwuaLCuG7nG9bMuDg9ihp6sisvD6DCqNjrudHxmzg';
+        const DEXSCREEN = `https://api.dexscreener.com/latest/dex/tokens/${MINT}`;
+        const COINGECKO =
+            'https://api.coingecko.com/api/v3/simple/price?ids=solana&vs_currencies=usd&include_24hr_change=true';
+
+        const nf = v => Intl.NumberFormat('en-US').format(v);
+        const usd = v => `$${nf(v)}`;
+        const delta = v => `${v > 0 ? '+' : ''}${v.toFixed(2)} %`;
+
+        async function getJSONCached(url, ttlSec) {
+            const cacheKey = 'cache_' + btoa(url);
+            const now = Date.now() / 1000;
+            try {
+                const entry = JSON.parse(localStorage.getItem(cacheKey) || 'null');
+                if (entry && now - entry.t < ttlSec) return entry.d;
+            } catch {
+                /* ignore parse errors */
+            }
+            const res = await fetch(url);
+            const data = res.ok ? await res.json() : null;
+            localStorage.setItem(cacheKey, JSON.stringify({ t: now, d: data }));
+            return data;
+        }
+
+        const dexStats = () =>
+            getJSONCached(DEXSCREEN, 60).then(({ pairs }) => {
+                const p =
+                    pairs.find(x => x.quoteToken.symbol === 'USDC') || pairs[0];
+                return {
+                    price: +p.priceUsd,
+                    volume24h: p.volume.h24 ?? 0,
+                    liquidity: p.liquidity.usd ?? 0,
+                    tvl: p.fdv ?? 0,
+                    marketCap: p.marketCap ?? null,
+                };
+            });
+
+        const solPrice = () =>
+            getJSONCached(COINGECKO, 300).then(d => ({
+                p: d.solana.usd,
+                ch: d.solana.usd_24h_change,
+            }));
+
+        const marqueeEl = document.getElementById('marquee');
+
+        async function buildDynamic() {
+            const [dex, sol] = await Promise.all([dexStats(), solPrice()]);
+            const items = [
+                '🔥 LIVE DATA',
+                `💵 Price $${dex.price}`,
+                `📊 Market Cap $${dex.marketCap ? nf(dex.marketCap) : 'N/A'}`,
+                `💰 Liquidity $${dex.liquidity}`,
+                `💧 TVL $${dex.tvl}`,
+                `📈 24 h Vol $${dex.volume24h}`,
+                `⚡ SOL ${usd(sol.p)} (${delta(sol.ch)})`,
+                '🐸 Built on Solana',
+            ];
+            const html = items.map((t, i) => `<span data-key="k${i}">${t}</span>`).join('');
+            let amount_ = Math.ceil(100 / items.length);
+            marqueeEl.innerHTML = html.repeat(amount_);
+
+            const dynamicTVL = document.getElementById('dynamic-tvl');
+            dynamicTVL.innerHTML = `<strong class="text-brand-light">${usd(dex.tvl)}</strong> TVL secured`;
+
+        }
+
+        buildDynamic();
+
+        const jumpTimer = document.getElementById('jump-timer');
+
+        let countdown = 10 * 60;
+        const updateCountdown = () => {
+            const minutes = Math.floor(countdown / 60);
+            const seconds = countdown % 60;
+            jumpTimer.textContent = `${minutes}:${seconds.toString().padStart(2, '0')}`;
+            if (countdown > 0) {
+                countdown--;
+                setTimeout(updateCountdown, 1000);
+            } else {
+                jumpTimer.textContent = 'now';
+            }
+        };
+
+        updateCountdown();
+
+        const navToggle = document.getElementById('nav-toggle');
+
+        const navMenu = document.getElementById('mobile-menu');
+
+        navToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('hidden');
+            navMenu.classList.toggle('flex');
+        });
+
+        const nav = document.getElementById('nav');
+
+        const stickyOffset = nav.offsetTop;
+
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > stickyOffset) {
+                nav.classList.add('bg-grey-900', 'backdrop-blur-lg');
+            } else {
+                nav.classList.remove('bg-grey-900', 'backdrop-blur-lg');
+            }
+        });
+
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+                if (targetElement) {
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start',
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
